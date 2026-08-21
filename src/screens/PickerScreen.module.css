@@ -1,0 +1,80 @@
+.screen {
+  padding: 74px 22px 34px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16.5px;
+  color: var(--cl-ink-60);
+  margin-bottom: 22px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.option {
+  min-height: 76px;
+  width: 100%;
+  border-radius: var(--cl-r-lg);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  transition: background 0.16s ease;
+}
+
+.optionLabel {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Emphasis tiers: the model's best guess first, then near-misses, then the rest. */
+.likely {
+  background: var(--cl-tint);
+  border: 2px solid var(--cl-accent-40);
+}
+
+.likely:hover {
+  background: var(--cl-tint-hover);
+}
+
+.soft {
+  background: var(--cl-tint-soft);
+  border: 2px solid var(--cl-accent-24);
+}
+
+.soft:hover {
+  background: var(--cl-tint);
+}
+
+.plain {
+  background: var(--cl-surface-warm);
+  border: 2px solid var(--cl-ink-10);
+}
+
+.plain:hover {
+  background: var(--cl-surface-warm-hover);
+}
+
+.badge {
+  margin-left: auto;
+  flex: none;
+  padding: 6px 12px;
+  border-radius: var(--cl-r-pill);
+  background: var(--cl-accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}

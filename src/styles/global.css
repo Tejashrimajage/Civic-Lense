@@ -1,0 +1,55 @@
+@import './tokens.css';
+@import './animations.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--cl-canvas);
+  color: var(--cl-ink);
+  font-family: var(--cl-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--cl-accent-deep);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cl-accent-deep-hover);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+  color: inherit;
+}
+
+/* Visible focus for keyboard users only — the design is touch-first. */
+:focus-visible {
+  outline: 2px solid var(--cl-accent);
+  outline-offset: 2px;
+}

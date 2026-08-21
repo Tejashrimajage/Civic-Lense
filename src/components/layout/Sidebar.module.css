@@ -1,0 +1,138 @@
+.sidebar {
+  width: 256px;
+  flex: none;
+  color: var(--cl-ink);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--cl-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.mark span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2.5px solid #fff;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--cl-ink-62);
+  margin-bottom: 28px;
+}
+
+.groupLabel {
+  font: 500 10px/1 var(--cl-font-mono);
+  letter-spacing: 0.14em;
+  color: var(--cl-ink-40);
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  color: var(--cl-ink-72);
+  text-align: left;
+  width: 100%;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.navItem:hover {
+  background: var(--cl-accent-10);
+  color: var(--cl-ink);
+}
+
+.navItemActive {
+  background: var(--cl-accent-10);
+  color: var(--cl-ink);
+}
+
+.dot {
+  margin-left: auto;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cl-accent);
+  flex: none;
+}
+
+.toggles {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cl-ink-12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--cl-ink-72);
+  cursor: pointer;
+}
+
+.toggle input {
+  margin-top: 2px;
+  accent-color: var(--cl-accent);
+  width: 15px;
+  height: 15px;
+  flex: none;
+  cursor: pointer;
+}
+
+.toggleHint {
+  display: block;
+  color: var(--cl-ink-50);
+  font-size: 12.5px;
+  margin-top: 2px;
+}
+
+.footnote {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cl-ink-12);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--cl-ink-50);
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}

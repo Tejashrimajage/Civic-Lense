@@ -1,0 +1,66 @@
+.screen {
+  justify-content: flex-end;
+}
+
+.sheet {
+  padding: 26px 22px 40px;
+  border-radius: var(--cl-r-sheet) var(--cl-r-sheet) 0 0;
+  background: var(--cl-surface);
+  color: var(--cl-ink);
+  box-shadow: var(--cl-shadow-sheet);
+  animation: cl-sheet 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.grabber {
+  width: 44px;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--cl-ink-16);
+  margin: 0 auto 22px;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+.body {
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--cl-ink-65);
+  margin-bottom: 22px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.field {
+  height: 66px;
+  border-radius: var(--cl-r-md);
+  background: var(--cl-surface-warm);
+  border: 2px solid var(--cl-ink-12);
+  padding: 0 18px;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+  transition: background 0.16s ease, border-color 0.16s ease;
+}
+
+.field::placeholder {
+  color: var(--cl-ink-40);
+}
+
+.field:focus {
+  background: var(--cl-tint-soft);
+  border-color: var(--cl-accent);
+}
+
+.skip {
+  margin-top: 12px;
+}

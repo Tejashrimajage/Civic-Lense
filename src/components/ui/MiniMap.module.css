@@ -1,0 +1,44 @@
+/* Decorative map thumbnail: grid streets, one diagonal road, a dropped pin. */
+.map {
+  position: relative;
+  width: 74px;
+  height: 70px;
+  border-radius: var(--cl-r-sm);
+  overflow: hidden;
+  flex: none;
+  background: var(--cl-surface-map);
+  border: 1px solid var(--cl-ink-10);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+      0deg,
+      var(--cl-ink-07) 0 1px,
+      transparent 1px 15px
+    ),
+    repeating-linear-gradient(90deg, var(--cl-ink-07) 0 1px, transparent 1px 15px);
+}
+
+.road {
+  position: absolute;
+  top: -8px;
+  left: -16px;
+  width: 120px;
+  height: 20px;
+  background: rgba(29, 23, 18, 0.09);
+  transform: rotate(33deg);
+}
+
+.pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(-45deg);
+  width: 14px;
+  height: 14px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--cl-accent);
+  box-shadow: 0 0 0 6px var(--cl-accent-20);
+}

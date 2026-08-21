@@ -1,0 +1,92 @@
+.device {
+  width: var(--cl-device-w);
+  height: var(--cl-device-h);
+  max-height: calc(100vh - 112px);
+  border-radius: 48px;
+  overflow: hidden;
+  position: relative;
+  flex: none;
+  background: #f2f2f7;
+  box-shadow: var(--cl-shadow-device);
+  font-family: var(--cl-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark {
+  background: #000;
+}
+
+/* Dynamic island */
+.island {
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 126px;
+  height: 37px;
+  border-radius: 24px;
+  background: #000;
+  z-index: 50;
+}
+
+.statusBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Home indicator — always above screen content */
+.homeIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  pointer-events: none;
+}
+
+.homeIndicator span {
+  width: 139px;
+  height: 5px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dark .homeIndicator span {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* On a real phone, drop the bezel and fill the viewport. */
+@media (max-width: 900px) {
+  .device {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .island {
+    display: none;
+  }
+}

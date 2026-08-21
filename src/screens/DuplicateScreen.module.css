@@ -1,0 +1,69 @@
+.screen {
+  padding: 74px 22px 34px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.body {
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--cl-ink-65);
+  margin-bottom: 22px;
+}
+
+.card {
+  border-radius: var(--cl-r-lg);
+  background: var(--cl-surface-warm);
+  border: 2px solid var(--cl-ink-10);
+  padding: 18px;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.cardTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cardMeta {
+  font-size: 14px;
+  color: var(--cl-ink-55);
+  white-space: nowrap;
+}
+
+/* Escalation progress: filled segments are days already elapsed. */
+.segments {
+  display: flex;
+  gap: 7px;
+}
+
+.segment {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--cl-ink-14);
+}
+
+.segmentFilled {
+  background: var(--cl-accent);
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+}

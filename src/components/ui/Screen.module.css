@@ -1,0 +1,42 @@
+.screen {
+  position: absolute;
+  inset: 0;
+}
+
+/**
+ * Opt-in column layout, for screens that size regions against the frame
+ * (a fixed hero over a filling sheet, actions pinned to the bottom).
+ * Scrolling screens stay in normal block flow so tall cards are never
+ * shrunk below their content.
+ */
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.light {
+  background: var(--cl-surface);
+  color: var(--cl-ink);
+}
+
+.dark {
+  background: var(--cl-dark);
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(29, 23, 18, 0.45);
+}
+
+.fade {
+  animation: cl-in 0.35s ease both;
+}
+
+.fadeFast {
+  animation: cl-in 0.25s ease both;
+}
+
+.scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

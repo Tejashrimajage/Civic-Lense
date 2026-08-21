@@ -1,0 +1,40 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.dark {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.light {
+  background: var(--cl-surface-map);
+  color: var(--cl-ink-50);
+}
+
+/* Highlight while a photo is dragged over the viewfinder. */
+.dropping {
+  box-shadow: inset 0 0 0 3px var(--cl-accent);
+}

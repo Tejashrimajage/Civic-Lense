@@ -1,0 +1,17 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 48px;
+  background: var(--cl-canvas-gradient);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    gap: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+}

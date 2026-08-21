@@ -1,0 +1,163 @@
+.screen {
+  padding: 70px 22px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.reference {
+  font: 500 26px var(--cl-font-mono);
+}
+
+.status {
+  padding: 8px 14px;
+  border-radius: var(--cl-r-pill);
+  background: var(--cl-success-bg);
+  color: var(--cl-success-ink);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.card {
+  border-radius: var(--cl-r-lg);
+  overflow: hidden;
+  border: 2px solid var(--cl-ink-12);
+  margin-bottom: 22px;
+}
+
+.hero {
+  height: 170px;
+  position: relative;
+  background: var(--cl-surface-map);
+}
+
+/* The public copy of the photo is blurred. */
+.heroPhoto {
+  filter: blur(1px);
+}
+
+.cardBody {
+  padding: 18px;
+}
+
+.issue {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+}
+
+.landmark {
+  font-size: 15px;
+  color: var(--cl-ink-60);
+  line-height: 1.5;
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.stat {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--cl-r-sm);
+  background: var(--cl-surface-warm);
+}
+
+.statUrgent {
+  background: var(--cl-tint);
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.statValueUrgent {
+  color: var(--cl-accent-deep);
+}
+
+.statLabel {
+  font-size: 14px;
+  color: var(--cl-ink-60);
+  margin-top: 2px;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.event {
+  display: flex;
+  gap: 14px;
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+}
+
+.node {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 6px;
+  background: var(--cl-ink-30);
+}
+
+.nodeDone {
+  background: var(--cl-accent);
+}
+
+.nodePending {
+  background: transparent;
+  border: 2px solid var(--cl-ink-30);
+}
+
+.line {
+  flex: 1;
+  width: 2px;
+  background: var(--cl-ink-14);
+}
+
+.eventBody {
+  padding-bottom: 22px;
+}
+
+.eventBodyLast {
+  padding-bottom: 0;
+}
+
+.eventTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.eventTitlePending {
+  color: var(--cl-ink-60);
+}
+
+.eventMeta {
+  font-size: 14.5px;
+  color: var(--cl-ink-55);
+  margin-top: 4px;
+}
+
+.closeAction {
+  margin-top: 28px;
+  height: 66px;
+  font-size: 17.5px;
+}

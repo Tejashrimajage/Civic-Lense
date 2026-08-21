@@ -1,0 +1,89 @@
+/**
+ * Design tokens lifted from the CivicLens prototype.
+ * Every colour, radius and font in the app resolves to one of these.
+ */
+:root {
+  /* Brand */
+  --cl-accent: #ff5c38;
+  --cl-accent-hover: #ff7250;
+  --cl-accent-deep: #d2401a;
+  --cl-accent-deep-hover: #b0330f;
+
+  /* Ink */
+  --cl-ink: #1d1712;
+  --cl-ink-72: rgba(29, 23, 18, 0.72);
+  --cl-ink-68: rgba(29, 23, 18, 0.68);
+  --cl-ink-65: rgba(29, 23, 18, 0.65);
+  --cl-ink-62: rgba(29, 23, 18, 0.62);
+  --cl-ink-60: rgba(29, 23, 18, 0.6);
+  --cl-ink-55: rgba(29, 23, 18, 0.55);
+  --cl-ink-50: rgba(29, 23, 18, 0.5);
+  --cl-ink-40: rgba(29, 23, 18, 0.4);
+  --cl-ink-30: rgba(29, 23, 18, 0.3);
+  --cl-ink-16: rgba(29, 23, 18, 0.16);
+  --cl-ink-14: rgba(29, 23, 18, 0.14);
+  --cl-ink-12: rgba(29, 23, 18, 0.12);
+  --cl-ink-10: rgba(29, 23, 18, 0.1);
+  --cl-ink-09: rgba(29, 23, 18, 0.09);
+  --cl-ink-07: rgba(29, 23, 18, 0.07);
+  --cl-ink-05: rgba(29, 23, 18, 0.05);
+
+  /* Warm surfaces */
+  --cl-canvas: #f6efe7;
+  --cl-canvas-gradient: radial-gradient(
+    120% 90% at 10% 0%,
+    #fffbf7 0%,
+    #f6efe7 60%,
+    #efe5da 100%
+  );
+  --cl-surface: #fffdfb;
+  --cl-surface-card: #ffffff;
+  --cl-surface-warm: #f7f2ec;
+  --cl-surface-warm-hover: #f0e8df;
+  --cl-surface-map: #f1e9df;
+  --cl-tint: #fff3ec;
+  --cl-tint-soft: #fff9f5;
+  --cl-tint-hover: #ffe7dc;
+
+  /* Dark (camera / analysing) */
+  --cl-dark: #0c0d0e;
+  --cl-dark-photo: #15171a;
+
+  /* Success */
+  --cl-success-bg: #dff6ea;
+  --cl-success-ink: #0f6b4a;
+  --cl-mint: #6be8a8;
+  --cl-mint-ink: #0a3d28;
+
+  /* Accent alphas */
+  --cl-accent-40: rgba(255, 92, 56, 0.4);
+  --cl-accent-28: rgba(255, 92, 56, 0.28);
+  --cl-accent-24: rgba(255, 92, 56, 0.24);
+  --cl-accent-20: rgba(255, 92, 56, 0.2);
+  --cl-accent-10: rgba(255, 92, 56, 0.1);
+  --cl-accent-08: rgba(255, 92, 56, 0.08);
+
+  /* Shadows */
+  --cl-shadow-accent: 0 12px 34px rgba(255, 92, 56, 0.45);
+  --cl-shadow-accent-sm: 0 12px 30px rgba(255, 92, 56, 0.35);
+  --cl-shadow-card: 0 12px 34px rgba(29, 23, 18, 0.08);
+  --cl-shadow-sheet: 0 -20px 60px rgba(29, 23, 18, 0.3);
+  --cl-shadow-device: 0 40px 80px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.12);
+
+  /* Type */
+  --cl-font: 'Sora', system-ui, -apple-system, sans-serif;
+  --cl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --cl-font-ios: -apple-system, 'SF Pro', system-ui, sans-serif;
+
+  /* Radii */
+  --cl-r-sm: 14px;
+  --cl-r-md: 18px;
+  --cl-r-lg: 20px;
+  --cl-r-xl: 22px;
+  --cl-r-sheet: 30px;
+  --cl-r-pill: 999px;
+
+  /* Device */
+  --cl-device-w: 402px;
+  --cl-device-h: 874px;
+}
